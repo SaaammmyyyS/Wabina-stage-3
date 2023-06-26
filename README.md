@@ -23,4 +23,5 @@
 ### Insert the value of the ‘favorite’ query parameter to the table.
 1. `http://127.0.0.1:8000/programming-language/Javascript`
 
-### To check the database/schema open `/database/migrations/2023_06_25_095343_create_programming_languages_table.php`
+### To check the database/schema
+1. Open `/database/migrations/2023_06_25_095343_create_programming_languages_table.php`
