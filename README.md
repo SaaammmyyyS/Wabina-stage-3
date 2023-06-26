@@ -19,3 +19,6 @@
 1. Make sure you have Node.js and npm installed on your machine.
 2. Run `npm install` to install the project's dependencies.
 3. Run `npm run dev` to compile and bundle the frontend assets for development.
+
+### Insert the value of the ‘favorite’ query parameter to the table.
+1. `http://127.0.0.1:8000/programming-language/Javascript`
