@@ -16,16 +16,18 @@
 
 ### Backend Setup
 1. Run `composer install` to install the project's PHP dependencies using Composer, the PHP dependency manager.
-2. Copy the `.env.example` file and rename it to `.env`. This file is used to store configuration settings for your Laravel application.
+2. Copy the `.env.example` file and rename it to `.env`. This file is used to store configuration settings for your application.
 3. Open the `.env` file and locate the `DB_DATABASE` variable. Replace the value `laravel` with `sysdev_recruitment`. This sets the application to use the `sysdev_recruitment` database.
-4. Run `php artisan migrate` to execute database migrations. This will create or modify the necessary database tables.
-5. Run `php artisan db:seed --class=InfoSeeder` to populate the database with initial data using the `InfoSeeder` class.
-6. Run `php artisan serve` to start the Laravel development server. You can access your application in a web browser through the specified URL (usually `http://localhost:8000`).
+4. Run `php artisan key:generate` to generate a unique application key used for encryption and other security-related purposes. The key will be automatically saved in the `.env` file.
+5. Run `php artisan migrate` to execute database migrations. This will create or modify the necessary database tables.
+6. Run `php artisan db:seed --class=InfoSeeder` to populate the database with initial data using the `InfoSeeder` class. You can replace `InfoSeeder` with the desired seeder class if needed.
+7. Run `php artisan serve` to start the Laravel development server. You can access your application in a web browser through the specified URL (usually `http://localhost:8000`).
 
 ### Frontend Setup
 1. Make sure you have Node.js and npm installed on your machine.
 2. Run `npm install` to install the project's dependencies.
 3. Run `npm run dev` to compile and bundle the frontend assets for development.
+
 
 ### Insert the value of the ‘favorite’ query parameter to the table.
 1. `http://127.0.0.1:8000/programming-language/new?favorite=Javascript`
