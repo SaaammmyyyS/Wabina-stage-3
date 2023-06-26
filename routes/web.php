@@ -22,7 +22,7 @@ Route::get('/', function () {
 Route::controller(UserController::class)->group(function(){
     Route::get('/programming-language', 'Show')->name('favorite');
 
-    Route::get('/programming-language/{name}', 'ShowFavorite')->name('show')->where(['name' => '[a-zA-Z\s!@#$%^&*()-+]+',]);
+    Route::get('/programming-language/new', 'ShowTable')->name('new')->where(['new' => '[a-zA-Z\s!@#$%^&*()-+]+',]);
 });
 
 

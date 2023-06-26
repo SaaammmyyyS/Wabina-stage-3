@@ -12,14 +12,17 @@ class UserController extends Controller
         return view("main");
     }
 
-    public function ShowFavorite(Request $request, $name){
+
+    public function ShowTable(Request $request){
         $infos = programming_languages::find(1);
 
         $infos->insert([
-            'favorite' => $name,
+            'favorite' => $request->input('favorite'),
         ]);
 
         $favorites = programming_languages::select('id', 'favorite')->get();
+
+
 
         return view('welcome', ['favorites' => $favorites], ['infos' => $infos]);
     }
