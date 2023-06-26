@@ -28,5 +28,5 @@ Route::controller(UserController::class)->group(function(){
 
 Route::controller(InfoController::class)->group(function(){
     Route::get('/info/edit', 'InfoPage')->name('info.edit');
-    Route::get('/info/update', 'UpdateInfo')->name('info.update');
+    Route::post('/info/update', 'UpdateInfo')->name('info.update');
 });

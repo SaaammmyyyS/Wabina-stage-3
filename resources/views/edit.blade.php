@@ -19,7 +19,8 @@
         <div class="min-h-screen p-6 bg-gray-100 flex items-center justify-center">
             <div class="container max-w-screen-lg mx-auto">
                 <div>
-                    <form method="GET" action="{{route('info.update')}}" enctype="multipart/form-data">
+                    <form method="POST" action="{{route('info.update')}}" enctype="multipart/form-data">
+                        @csrf
                         <h2 class="font-semibold text-xl text-gray-600">Favorite Programming Edit Form</h2><br>
 
                         <div class="bg-white rounded shadow-lg p-4 px-4 md:p-8 mb-6">
