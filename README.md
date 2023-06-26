@@ -10,10 +10,17 @@
 ## About this Project
 
 
+## Installation
+1. Clone the repository to your local machine.
+2. Navigate to the project directory.
+
 ### Backend Setup
-1. Run `php artisan migrate` to execute database migrations. This will create or modify the necessary database tables.
-2. Run `php artisan db:seed --class=InfoSeeder` to populate the database with initial data using the `InfoSeeder` class. You can replace `InfoSeeder` with the desired seeder class if needed.
-3. Run `php artisan serve` to start the Laravel development server. You can access your application in a web browser through the specified URL (usually `http://localhost:8000`).
+1. Run `composer install` to install the project's PHP dependencies using Composer, the PHP dependency manager.
+2. Copy the `.env.example` file and rename it to `.env`. This file is used to store configuration settings for your Laravel application.
+3. Open the `.env` file and locate the `DB_DATABASE` variable. Replace the value `laravel` with `sysdev_recruitment`. This sets the application to use the `sysdev_recruitment` database.
+4. Run `php artisan migrate` to execute database migrations. This will create or modify the necessary database tables.
+5. Run `php artisan db:seed --class=InfoSeeder` to populate the database with initial data using the `InfoSeeder` class.
+6. Run `php artisan serve` to start the Laravel development server. You can access your application in a web browser through the specified URL (usually `http://localhost:8000`).
 
 ### Frontend Setup
 1. Make sure you have Node.js and npm installed on your machine.
@@ -25,3 +32,5 @@
 
 ### To check the database/schema
 1. Open `/database/migrations/2023_06_25_095343_create_programming_languages_table.php`
+
+
